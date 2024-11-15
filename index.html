@@ -6,143 +6,133 @@
     <title>Pinterest 2.0</title>
 </head>
 <body>
-    <!-- Header de pinteres-->
-    <!-- SCAR Nav lateral izquierdo-->
-    <nav>
-        <ul>
-            <li>
-                <a>
-                    <img style="width: 24px; height: 24px;" src="https://cdn-icons-png.flaticon.com/512/25/25694.png" alt="Inicio">
-                </a>
-            </li>
-            <li>
-                <a>
-                    <img style="width: 24px; height: 24px;"  src="https://cdn-icons-png.flaticon.com/512/105/105503.png" alt="Explorar">
-                </a>
-            </li>
-            <li>
-                <a >
-                    <img style="width: 24px; height: 24px;"  src="https://cdn-icons-png.flaticon.com/512/1828/1828926.png" alt="Crear">
-                </a>
-            </li>
-            <li>
-                <a>
-                    <img style="width: 24px; height: 24px;"  src="https://cdn-icons-png.flaticon.com/512/60/60753.png" alt="actualizaciones">
-                </a>
-            </li>
-            <li>
-                <a>
-                    <img style="width: 24px; height: 24px;"  src="https://cdn-icons-png.flaticon.com/512/31/31278.png" alt="Mensajes">
-                </a>
-            </li>
-        </ul>
-    </nav> 
-    <!-- KALEB Barra de búsqueda y opciones preferidas -->
     <header>
-       <div class="field" id="searchform">
-  <input type="text" id="searchterm" placeholder="what are you searching for?" />
-  <button type="button" id="search">Find!</button>
-</div>
-        <nav>
-            <a href="#">Todas</a>
-            <a href="#">Nails</a>
-            <a href="#">Manualidades fáciles</a>
-            <a href="#">Tutorial para dibujar cuerpo</a>
-            <a href="#">Comidas rápidas saludables</a>
-            <a href="#">Bebidas</a>
-            <a href="#">Casas Minecraft</a>
-            <a href="#">Peinados sencillos</a>
-            <a href="#">Tejidos a crochet</a>
-            <a href="#">></a>
-        </nav>
-    </header> 
-
-    <!-- JUSEF  Nav lateral derecho-->
-    <div>
+        <nav aria-label="Navegación principal">
+            <ul>
+                <li><a href="#"><img src="https://cdn-icons-png.flaticon.com/512/25/25694.png" alt="Inicio" width="24" height="24"></a></li>
+                <li><a href="#"><img src="https://cdn-icons-png.flaticon.com/512/105/105503.png" alt="Explorar" width="24" height="24"></a></li>
+                <li><a href="#"><img src="https://cdn-icons-png.flaticon.com/512/1828/1828926.png" alt="Crear" width="24" height="24"></a></li>
+                <li><a href="#"><img src="https://cdn-icons-png.flaticon.com/512/60/60753.png" alt="Actualizaciones" width="24" height="24"></a></li>
+                <li><a href="#"><img src="https://cdn-icons-png.flaticon.com/512/31/31278.png" alt="Mensajes" width="24" height="24"></a></li>
+            </ul>
+        </nav> 
         <div>
-            <img src="profile-icon.png" alt="Ícono de perfil">
-            <h2>Jusef Carrillo</h2>
-            <p>Personal</p>
-            <p>chidonlongo@gmail.com</p>
+            <form id="searchform" role="search">
+                <label for="searchterm">Buscar:</label>
+                <input type="text" id="searchterm" placeholder="¿Qué estás buscando?">
+                <button type="submit">Buscar</button>
+            </form>
+            <nav aria-label="Navegación de categorías">
+                <ul>
+                    <li><a href="#">Todas</a></li>
+                    <li><a href="#">Nails</a></li>
+                    <li><a href="#">Manualidades fáciles</a></li>
+                    <li><a href="#">Tutorial para dibujar cuerpo</a></li>
+                    <li><a href="#">Comidas rápidas saludables</a></li>
+                    <li><a href="#">Bebidas</a></li>
+                    <li><a href="#">Casas Minecraft</a></li>
+                    <li><a href="#">Peinados sencillos</a></li>
+                    <li><a href="#">Tejidos a crochet</a></li>
+                    <li><a href="#">></a></li>
+                </ul>
+            </nav>
         </div>
-    
-        <h3>Tus cuentas</h3>
-        <ul>
-            <li><a href="#">Agregar cuenta</a></li>
-            <li><a href="#">Convertir en cuenta para empresa</a></li>
-        </ul>
-    
-        <h3>Más opciones</h3>
-        <ul>
-            <li><a href="#">Configuración</a></li>
-            <li><a href="#">Herramienta para configurar el feed</a></li>
-            <li><a href="#">Instalar la aplicación de Windows</a></li>
-            <li><a href="#">Centro para denuncias e infracciones</a></li>
-            <li><a href="#">Tus derechos de privacidad</a></li>
-            <li><a href="#">Centro de asistencia</a></li>
-            <li><a href="#">Condiciones del servicio</a></li>
-            <li><a href="#">Política de privacidad</a></li>
-            <li><a href="#">Sé un evaluador beta</a></li>
-            <li><a href="#">Salir</a></li>
-        </ul>
-    </div>
-   
-    <!-- TONY NAPOLES Contenido principal de pinteres-->
+    </header>
     <main>
-        <article>
-            <img src="#" alt="foto rota">
-            <h3>foto modelo</h3>
-            <div><img src="#" alt="no disponible"></div>
-        </article>
-        <article>
-            <img src="#" alt="foto rota">
-            <h3>foto generica</h3>
-            <div><img src="#" alt="no disponible"></div>
-        </article>
-        <article>
-            <img src="#" alt="foto rota">
-            <h3>foto generica 2</h3>
-            <div><img src="#" alt="no disponible"></div>
-        </article>
+        <aside aria-label="Perfil de usuario">
+            <div>
+                <img src="https://cdn-icons-png.flaticon.com/512/64/64572.png" alt="Ícono de perfil" width="24" height="24">
+                <h2>Jusef Carrillo</h2>
+                <p>Personal</p>
+                <p>chidonlongo@gmail.com</p>
+            </div>
+            <section>
+                <h3>Tus cuentas</h3>
+                <ul>
+                    <li><a href="#">Agregar cuenta</a></li>
+                    <li><a href="#">Convertir en cuenta para empresa</a></li>
+                </ul>
+            </section>
+            <section>
+                <h3>Más opciones</h3>
+                <ul>
+                    <li><a href="#">Configuración</a></li>
+                    <li><a href="#">Configurar el feed</a></li>
+                    <li><a href="#">Instalar la aplicación de Windows</a></li>
+                    <li><a href="#">Centro de denuncias</a></li>
+                    <li><a href="#">Tus derechos de privacidad</a></li>
+                    <li><a href="#">Centro de asistencia</a></li>
+                    <li><a href="#">Condiciones del servicio</a></li>
+                    <li><a href="#">Política de privacidad</a></li>
+                    <li><a href="#">Ser evaluador beta</a></li>
+                    <li><a href="#">Salir</a></li>
+                </ul>
+            </section>
+        </aside>
+        <section aria-label="Contenido principal">
+            <article>
+                <img src="#" alt="Foto modelo">
+                <h3>Foto modelo</h3>
+                <div><img src="#" alt="No disponible"></div>
+            </article>
+            <article>
+                <img src="#" alt="Foto genérica">
+                <h3>Foto genérica</h3>
+                <div><img src="#" alt="No disponible"></div>
+            </article>
+            <article>
+                <img src="#" alt="Foto genérica 2">
+                <h3>Foto genérica 2</h3>
+                <div><img src="#" alt="No disponible"></div>
+            </article>
+        </section>
     </main>
-    <!-- JONATAN Preguntas frecuentes-->
-    <label for="?">?</label>
-    <select name="elementos" id="elementos">
-        <option value="crear">Crear Widget</option>
-        <option value="info">Info</option>
-        <option value="Blog">Blog</option>
-        <option value="empresas">Empresas</option>
-        <option value="empleos">Empleos</option>
-        <option value="dev">Desarrolladores</option>
-        <option value="delete">Eliminaciones</option>
-        <option value="Poli">Politicas de privacidad</option>
-        <option value="add">Anuncios personalizados</option>
-        <option value="derechos">Tus derechos de privacidad</option>
-        <option value="condiciones">Condiciones</option>
-    </select>
-    <!--JORG ADAN Footer de pinteres-->
+    <section aria-label="Preguntas frecuentes">
+        <label for="faq">Preguntas frecuentes:</label>
+        <select name="faq" id="faq">
+            <option value="crear">Crear Widget</option>
+            <option value="info">Info</option>
+            <option value="blog">Blog</option>
+            <option value="empresas">Empresas</option>
+            <option value="empleos">Empleos</option>
+            <option value="dev">Desarrolladores</option>
+            <option value="delete">Eliminaciones</option>
+            <option value="privacy">Política de privacidad</option>
+            <option value="ads">Anuncios personalizados</option>
+            <option value="rights">Tus derechos de privacidad</option>
+            <option value="terms">Condiciones</option>
+        </select>
+    </section>
     <footer>
-        <ul> <h4>Compañia</h4></ul>
-    <ul>Nosotros</ul>
-    <ul>Nuestros Servicios</ul>
-    <ul>Politicas de Privacidad</ul>
-    <ul>Afiliate</ul>
-     <hr>   </ol>
-        <ul> <h4>Ayuda</h4></ul>
-        <ul>Preguntas</ul>
-        <ul>Compras</ul>
-        <ul>Envios</ul>
-        <ul>Status de Orden</ul>
-        <ul>Pago</ul>
-         </ol>
-            <ul> <h4>Tienda</h4></ul>
-            <ul>Ropa</ul>
-            <ul>Zapatos</ul>
-            <ul>Telefonos</ul>
-            <ul>Pantallas</ul>
-        </ol>
-    
-    
+        <section>
+            <h4>Compañía</h4>
+            <ul>
+                <li><a href="#">Nosotros</a></li>
+                <li><a href="#">Nuestros Servicios</a></li>
+                <li><a href="#">Políticas de Privacidad</a></li>
+                <li><a href="#">Afíliate</a></li>
+            </ul>
+        </section>
+        <section>
+            <h4>Ayuda</h4>
+            <ul>
+                <li><a href="#">Preguntas</a></li>
+                <li><a href="#">Compras</a></li>
+                <li><a href="#">Envíos</a></li>
+                <li><a href="#">Estatus de Orden</a></li>
+                <li><a href="#">Pago</a></li>
+            </ul>
+        </section>
+        <section>
+            <h4>Tienda</h4>
+            <ul>
+                <li><a href="#">Ropa</a></li>
+                <li><a href="#">Zapatos</a></li>
+                <li><a href="#">Teléfonos</a></li>
+                <li><a href="#">Pantallas</a></li>
+            </ul>
+        </section>
     </footer>
+
 </body>
 </html>
